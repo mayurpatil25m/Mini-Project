@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour and Tourism Website</title>
+    <link rel="stylesheet" href="tours.css">
+</head>
+<body>
+
+      <!--===========Nav Bar=================-->
+      <section class="nav-bar">
+        <div class="logo">Go Trip</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="packages.html">Package</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact_form.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <header>
+        <h1>Explore Our Tours</h1>
+        <p>Find your perfect adventure</p>
+    </header>
+    <main>
+        <section class="search-filter">
+            <input type="text" placeholder="Search tours..." id="searchBar">
+            <select id="filterCategory">
+                <option value="">Filter by Category</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+            </select>
+            <select id="filterPrice">
+                <option value="">Filter by Price</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </section>
+        <section class="tours" id="tourContainer">
+            <div class="tour-card">
+                <img src="Img/LONDON.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>London</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Img/MALDIVES.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>Maldives</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Img/PAMUKALLE.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>Pamukalle</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Img/SANTORINI.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>Santorini</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Img/PRAGUE.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>Prague</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <div class="tour-card">
+                <img src="Img/PARIS.jpg" alt="Tour 1">
+                <div class="tour-info">
+                    <h2>Paris</h2>
+                    <p>Enjoy a relaxing vacation on the sunny beaches of the Caribbean.</p>
+                    <div class="details">
+                        <span class="duration">5 days</span>
+                        <span class="price">$800</span>
+                    </div>
+                    <div class="rating">★★★★☆</div>
+                    <button class="btn" onclick="openModal('modal1')">More Info</button>
+                </div>
+            </div>
+            <!-- Add more tour cards as needed -->
+        </section>
+    </main>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Beach Paradise</h2>
+            <p>Full description of the Beach Paradise tour...</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 TourSite. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+    </footer>
+    <script src="tours.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Nav Bar */
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-bar.scrolled {
+    background-color: #73c705;
+  }
+  
+  .nav-bar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-bar .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar .menu li a {
+    color: white;
+    padding: 10px;
+  }
+  
+  .nav-bar .menu li a:hover {
+    background-color: #1376b8;
+    border-radius: 5px;
+  }
+
+header {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #005f99;
+    color: white;
+    padding: 2rem 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+header .nav-links li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-filter input, .search-filter select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tour-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.tour-card:hover {
+    transform: scale(1.05);
+}
+
+.tour-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the whole area without distortion */
+}
+
+.tour-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.tour-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tour-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.tour-info .details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.tour-info .duration, .tour-info .price {
+    font-weight: bold;
+}
+
+.tour-info .rating {
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background-color: #005f99;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #004080;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer .footer-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .footer-links li a:hover {
+    color: #ffd700;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .nav-bar .menu {
+        gap: 10px;
+    }
+
+    .tours {
+        gap: 15px;
+    }
+
+    .tour-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar .menu {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    .tour-card {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .nav-bar {
+        align-items: center;
+    }
+
+    .tour-card {
+        width: 100%;
+    }
+
+    .tour-info h2 {
+        font-size: 1.2em;
+    }
+
+    .tour-info p {
+        font-size: 0.9em;
+    }
+
+    .details {
+        font-size: 0.8em;
+    }
+}

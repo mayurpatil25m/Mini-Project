@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="Hotelbooking.css">
+</head>
+
+<body>
+
+    <!--===========Nav Bar=================-->
+    <section class="nav-bar">
+        <div class="logo">Go Trip</div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="packages.html">Package</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact_form.html">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <header>
+        <h1>Hotel Booking</h1>
+    </header>
+    <main>
+        <section id="search-section">
+            
+            <form action="https://formsubmit.co/2dccbf024862b246281203f00c88a6bd" method="POST" id="search-form">
+                <div>
+                    <input type="hidden" name="_captcha" value="false">
+                </div>
+                <label for="name">Name:</label>
+                <input name="Name" type="text" placeholder="Enter your name">
+                <label for="check-in-date">Check-in Date:</label>
+                <input name="Check-in-Date" type="date" id="check-in-date" required>
+                <label for="check-out-date">Check-out Date:</label>
+                <input name="Check-out-date" type="date" id="check-out-date" required>
+                <label for="num-guests">Number of Guests:</label>
+                <input name="Number of guest" type="number" id="num-guests" min="1" required>
+                <label for="price-range">Price Range:</label>
+                <select name="Price-Range" id="price-range">
+                    <option value="">Any</option>
+                    <option value="0-50">$0 - $50</option>
+                    <option value="51-100">$51 - $100</option>
+                    <option value="101-200">$101 - $200</option>
+                    <option value="201-500">$201 - $500</option>
+                </select>
+                <button onclick="displayRoomDetails()" type="submit">Book Now!!</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 TourSite. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+       
+    </footer>
+    <script>
+        function displayRoomDetails(){
+    alert("Successfully booked!")
+}
+    </script>
+</body>
+
+</html>
